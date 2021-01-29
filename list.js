@@ -1,4 +1,38 @@
-addToList()
+class PassengerCreator {
+    constructor(firstName, lastName, birthday, homeTown, travelCity, leaveDate, returnDate, bags, food, cost, extralist, Age, timeGone) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.birthday = birthday;
+        this.homeTown = homeTown;
+        this.travelCity = travelCity;
+        this.leaveDate = leaveDate;
+        this.returnDate = returnDate;
+        this.bags = bags;
+        this.food = food;
+        this.cost = cost;
+        this.Age = Age;
+        this.extralist = extralist;
+        this.timeGone = timeGone;
+        this.id = Math.ceil(Math.random() * 1000000000 + 1000000);
+    }
+}
+
+
+class Money {
+    constructor(cost) {
+        cost = 10;
+        addten(); {
+            cost += 10;
+            return cost;
+        }
+    }
+}
+
+let food = "";
+let id = 0;
+
+function foodChange(choice) {
+    food = choice;
 }
 
 
