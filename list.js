@@ -16,7 +16,8 @@ class PassengerCreator {
         this.id = Math.ceil(Math.random() * 1000000000 + 1000000);
     }
 }
-
+var yes = localStorage.getItem("testStorage");
+var yes2 = JSON.parse(yes);
 
 class Money {
     constructor(cost) {
@@ -100,6 +101,9 @@ function addToList() {
     let Passenger = new PassengerCreator(firstName, lastName, birthday, homeTown, travelCity, leaveDate, returnDate, bags, food, cost, extralist, Age, timeGone);
     passengerList.push(Passenger);
     console.log(Passenger.food);
+    let testJSON = JSON.stringify(allVals);
+    console.log("saved");
+    localStorage.setItem("testStorage", testJSON);
 }
 
 function search() {
