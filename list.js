@@ -101,7 +101,7 @@ function addToList() {
     let Passenger = new PassengerCreator(firstName, lastName, birthday, homeTown, travelCity, leaveDate, returnDate, bags, food, cost, extralist, Age, timeGone);
     passengerList.push(Passenger);
     console.log(Passenger.food);
-    let testJSON = JSON.stringify(allVals);
+    let testJSON = JSON.stringify(passangerCreator);
     console.log("saved");
     localStorage.setItem("testStorage", testJSON);
 }
